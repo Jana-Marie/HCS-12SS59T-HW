@@ -50,51 +50,48 @@ Text GLabel 2650 1350 0    50   Input ~ 0
 F+
 Text GLabel 2650 1550 0    50   Input ~ 0
 F-
-Wire Wire Line
-	3400 1050 4300 1050
 $Comp
 L Device:R_Small R2
 U 1 1 5BA8FE52
-P 4300 950
-F 0 "R2" H 4359 996 50  0000 L CNN
-F 1 "8k2" H 4359 905 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603" H 4300 950 50  0001 C CNN
-F 3 "~" H 4300 950 50  0001 C CNN
-	1    4300 950 
+P 3800 900
+F 0 "R2" H 3859 946 50  0000 L CNN
+F 1 "8k2" H 3859 855 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 3800 900 50  0001 C CNN
+F 3 "~" H 3800 900 50  0001 C CNN
+	1    3800 900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 5BA8FEC5
-P 4300 1150
-F 0 "C5" H 4392 1196 50  0000 L CNN
-F 1 "82p" H 4392 1105 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4300 1150 50  0001 C CNN
-F 3 "~" H 4300 1150 50  0001 C CNN
-	1    4300 1150
+P 3800 1200
+F 0 "C5" H 3892 1246 50  0000 L CNN
+F 1 "82p" H 3892 1155 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3800 1200 50  0001 C CNN
+F 3 "~" H 3800 1200 50  0001 C CNN
+	1    3800 1200
 	1    0    0    -1  
 $EndComp
-Connection ~ 4300 1050
 $Comp
 L power:GND #PWR0102
 U 1 1 5BA8FF49
-P 4300 1250
-F 0 "#PWR0102" H 4300 1000 50  0001 C CNN
-F 1 "GND" H 4305 1077 50  0000 C CNN
-F 2 "" H 4300 1250 50  0001 C CNN
-F 3 "" H 4300 1250 50  0001 C CNN
-	1    4300 1250
+P 3800 1300
+F 0 "#PWR0102" H 3800 1050 50  0001 C CNN
+F 1 "GND" H 3805 1127 50  0000 C CNN
+F 2 "" H 3800 1300 50  0001 C CNN
+F 3 "" H 3800 1300 50  0001 C CNN
+	1    3800 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0103
 U 1 1 5BA9001E
-P 4300 850
-F 0 "#PWR0103" H 4300 700 50  0001 C CNN
-F 1 "+5V" H 4315 1023 50  0000 C CNN
-F 2 "" H 4300 850 50  0001 C CNN
-F 3 "" H 4300 850 50  0001 C CNN
-	1    4300 850 
+P 3800 800
+F 0 "#PWR0103" H 3800 650 50  0001 C CNN
+F 1 "+5V" H 3815 973 50  0000 C CNN
+F 2 "" H 3800 800 50  0001 C CNN
+F 3 "" H 3800 800 50  0001 C CNN
+	1    3800 800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -250,4 +247,176 @@ F 3 "~" H 2250 1150 50  0001 C CNN
 	1    2250 1150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3400 1050 3800 1050
+Wire Wire Line
+	3800 1000 3800 1050
+Wire Wire Line
+	3800 1100 3800 1050
+Connection ~ 3800 1050
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 5BA922CE
+P 5000 1700
+F 0 "Q?" H 5191 1746 50  0000 L CNN
+F 1 "BC547" H 5191 1655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5200 1625 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5000 1700 50  0001 L CNN
+	1    5000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 5BA92395
+P 6150 1700
+F 0 "Q?" H 6340 1746 50  0000 L CNN
+F 1 "BC547" H 6340 1655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6350 1625 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6150 1700 50  0001 L CNN
+	1    6150 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC557 Q?
+U 1 1 5BA927D3
+P 6150 1200
+F 0 "Q?" H 6340 1154 50  0000 L CNN
+F 1 "BC557" H 6340 1245 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6350 1125 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 6150 1200 50  0001 L CNN
+	1    6150 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC557 Q?
+U 1 1 5BA92884
+P 5000 1200
+F 0 "Q?" H 5191 1154 50  0000 L CNN
+F 1 "BC557" H 5191 1245 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5200 1125 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 5000 1200 50  0001 L CNN
+	1    5000 1200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6050 1000 6050 800 
+Wire Wire Line
+	6050 800  5100 800 
+Wire Wire Line
+	5100 1000 5100 800 
+Connection ~ 5100 800 
+Wire Wire Line
+	5100 800  4950 800 
+Wire Wire Line
+	6050 2500 5100 2500
+Connection ~ 5100 2500
+Wire Wire Line
+	5100 2500 4950 2500
+Wire Wire Line
+	5100 1400 5100 1450
+Connection ~ 5100 1450
+Wire Wire Line
+	5100 1450 5100 1500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BA94086
+P 4950 800
+F 0 "#PWR?" H 4950 650 50  0001 C CNN
+F 1 "+3.3V" H 4965 973 50  0000 C CNN
+F 2 "" H 4950 800 50  0001 C CNN
+F 3 "" H 4950 800 50  0001 C CNN
+	1    4950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BA94111
+P 4950 2500
+F 0 "#PWR?" H 4950 2250 50  0001 C CNN
+F 1 "GND" H 4955 2327 50  0000 C CNN
+F 2 "" H 4950 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0001 C CNN
+	1    4950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1400 6050 1450
+Connection ~ 6050 1450
+Wire Wire Line
+	6050 1450 6050 1500
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5BA9483E
+P 5600 1850
+F 0 "T?" V 5554 2090 50  0000 L CNN
+F 1 "Transformer_1P_1S" V 5645 2090 50  0000 L CNN
+F 2 "" H 5600 1850 50  0001 C CNN
+F 3 "~" H 5600 1850 50  0001 C CNN
+	1    5600 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 1450 5400 1450
+Wire Wire Line
+	5800 1450 6050 1450
+Text GLabel 5400 2250 3    50   Input ~ 0
+F-
+Text GLabel 5800 2250 3    50   Input ~ 0
+F+
+$Comp
+L Device:R_Small R?
+U 1 1 5BA95794
+P 4700 1200
+F 0 "R?" V 4504 1200 50  0000 C CNN
+F 1 "220" V 4595 1200 50  0000 C CNN
+F 2 "" H 4700 1200 50  0001 C CNN
+F 3 "~" H 4700 1200 50  0001 C CNN
+	1    4700 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BA9581F
+P 6450 1700
+F 0 "R?" V 6254 1700 50  0000 C CNN
+F 1 "220" V 6345 1700 50  0000 C CNN
+F 2 "" H 6450 1700 50  0001 C CNN
+F 3 "~" H 6450 1700 50  0001 C CNN
+	1    6450 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BA9588E
+P 4700 1700
+F 0 "R?" V 4504 1700 50  0000 C CNN
+F 1 "220" V 4595 1700 50  0000 C CNN
+F 2 "" H 4700 1700 50  0001 C CNN
+F 3 "~" H 4700 1700 50  0001 C CNN
+	1    4700 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BA9592B
+P 6450 1200
+F 0 "R?" V 6254 1200 50  0000 C CNN
+F 1 "220" V 6345 1200 50  0000 C CNN
+F 2 "" H 6450 1200 50  0001 C CNN
+F 3 "~" H 6450 1200 50  0001 C CNN
+	1    6450 1200
+	0    1    1    0   
+$EndComp
+Text GLabel 4600 1200 0    50   Input ~ 0
+GPIO15
+Text GLabel 6550 1700 2    50   Input ~ 0
+GPIO16
+Text GLabel 4600 1700 0    50   Input ~ 0
+GPIO15
+Text GLabel 6550 1200 2    50   Input ~ 0
+GPIO16
+Wire Wire Line
+	5100 1900 5100 2500
+Wire Wire Line
+	6050 1900 6050 2500
 $EndSCHEMATC
